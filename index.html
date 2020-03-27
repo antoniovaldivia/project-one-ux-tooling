@@ -1,66 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Components</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transforming Regent Park into an Ethical Smart City by 2040</title>
+<meta name="description" content="A plan to transform Regent Park into an Ethical Smart City by 2040 by the Institute without Boundaries at George Brown College.">
+<meta name="author" content="Antonio Valdivia & Mani Rezaeian">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+    <body>
+    <div class="progressBg"></div>
+    <div class="progress"><div class="progressText" ></div></div>
+    <div class="titleBar"></div>
     <main class="story">
-      <header>
-        <h1>Javascript and the UI</h1>
-        <nav>
-          <ul>
-            <li><a href="#javascript">Javascript Intro</a></li>
-            <li><a href="#window">The Browser Window</a></li>
-            <li><a href="#document">Document Object Model</a></li>
-            <li><a href="#element">Document Elements</a></li>
-          </ul>
-        </nav>
-      </header>
-      <article>
-        <section id="javascript">
-          <h2>Javascript Intro</h2>
-          <p>JavaScript (/ˈdʒɑːvəˌskrɪpt/),[9] often abbreviated as JS, is a high-level, just-in-time compiled, multi-paradigm programming language that conforms to the ECMAScript specification.[10] JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
-          <p>Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[11] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it,[12] and major web browsers have a dedicated JavaScript engine to execute it.</p>
-          <p>As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative (including object-oriented and prototype-based) programming styles. It has APIs for working with text, arrays, dates, regular expressions, and the DOM, but the language itself does not include any I/O, such as networking, storage, or graphics facilities. It relies upon the host environment in which it is embedded to provide these features.</p>
-          <p>Initially only implemented client-side in web browsers, JavaScript engines are now embedded in many other types of host software, including server-side in web servers and databases, and in non-web programs such as word processors and PDF software, and in runtime environments that make JavaScript available for writing mobile and desktop applications, including desktop widgets.</p>
-          <p>The terms Vanilla JavaScript and Vanilla JS refer to JavaScript not extended by any frameworks or additional libraries. Scripts written in Vanilla JS are plain JavaScript code.[13][14]</p>
-          <p>Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design. JavaScript was influenced by programming languages such as Self and Scheme.[15] The JSON serialization format, used to store data structures in files or transmit them across networks, is based on JavaScript.[16]</p>
-          <footer><p>Information copied from <cite><a href="https://en.wikipedia.org/wiki/JavaScript">Wikipedia's entry on JavaScript</a></cite></p></footer>
-        </section>
-        <section id="window">
-          <h2>The Browser Window</h2>
-          <p>The Window interface represents a window containing a DOM document; the document property points to the DOM document loaded in that window. A window for a given document can be obtained using the document.defaultView property.</p>
-          <p>A global variable, window, representing the window in which the script is running, is exposed to JavaScript code.</p>
-          <p>The Window interface is home to a variety of functions, namespaces, objects, and constructors which are not necessarily directly associated with the concept of a user interface window. However, the Window interface is a suitable place to include these items that need to be globally available. Many of these are documented in the JavaScript Reference and the DOM Reference.</p>
-          <p>In a tabbed browser, each tab is represented by its own Window object; the global window seen by JavaScript code running within a given tab always represents the tab in which the code is running. That said, even in a tabbed browser, some properties and methods still apply to the overall window that contains the tab, such as resizeTo() and innerHeight. Generally, anything that can't reasonably pertain to a tab pertains to the window instead.</p>
-          <footer><p>Information copied from <cite><a href="https://developer.mozilla.org/en-US/docs/Web/API/window">MDN's entry on the Window object</a></cite></p></footer>
-        </section>
-        <section id="document">
-          <h2>Document Object Model</h2>
-          <p>The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.[2]</p>
-          <p>The principal standardization of the DOM was handled by the World Wide Web Consortium, which last developed a recommendation in 2004. WHATWG took over development of the standard, publishing it as a living document. The W3C now publishes stable snapshots of the WHATWG standard.</p>
-          <p>The history of the Document Object Model is intertwined with the history of the "browser wars" of the late 1990s between Netscape Navigator and Microsoft Internet Explorer, as well as with that of JavaScript and JScript, the first scripting languages to be widely implemented in the JavaScript engines of web browsers.</p>
-          <p>JavaScript was released by Netscape Communications in 1995 within Netscape Navigator 2.0. Netscape's competitor, Microsoft, released Internet Explorer 3.0 the following year with a reimplementation of JavaScript called JScript. JavaScript and JScript let web developers create web pages with client-side interactivity. The limited facilities for detecting user-generated events and modifying the HTML document in the first generation of these languages eventually became known as "DOM Level 0" or "Legacy DOM." No independent standard was developed for DOM Level 0, but it was partly described in the specifications for HTML 4.</p>
-          <p>Legacy DOM was limited in the kinds of elements that could be accessed. Form, link and image elements could be referenced with a hierarchical name that began with the root document object. A hierarchical name could make use of either the names or the sequential index of the traversed elements. For example, a form input element could be accessed as either document.formName.inputName or document.forms[0].elements[0].</p>
-          <p>The Legacy DOM enabled client-side form validation and the popular "rollover" effect.</p>
-          <p>In 1997, Netscape and Microsoft released version 4.0 of Netscape Navigator and Internet Explorer respectively, adding support for Dynamic HTML (DHTML) functionality enabling changes to a loaded HTML document. DHTML required extensions to the rudimentary document object that was available in the Legacy DOM implementations. Although the Legacy DOM implementations were largely compatible since JScript was based on JavaScript, the DHTML DOM extensions were developed in parallel by each browser maker and remained incompatible. These versions of the DOM became known as the "Intermediate DOM."</p>
-          <p>After the standardization of ECMAScript, the W3C DOM Working Group began drafting a standard DOM specification. The completed specification, known as "DOM Level 1", became a W3C Recommendation in late 1998. By 2005, large parts of W3C DOM were well-supported by common ECMAScript-enabled browsers, including Microsoft Internet Explorer version 6 (from 2001), Opera, Safari and Gecko-based browsers (like Mozilla, Firefox, SeaMonkey and Camino).</p>
-          <footer><p>Information copied from <cite><a href="https://en.wikipedia.org/wiki/Document_Object_Model">Wikipedia's entry on the Document Object Model</a></cite></p></footer>
-        </section>
-        <section id="element">
-          <h2>Document Elements</h2>
-          <p>Element is the most general base class from which all element objects (i.e. objects that represent elements) in a Document inherit. It only has methods and properties common to all kinds of elements. More specific classes inherit from Element. For example, the HTMLElement interface is the base interface for HTML elements, while the SVGElement interface is the basis for all SVG elements. Most functionality is specified further down the class hierarchy.</p>
-          <p>Languages outside the realm of the Web platform, like XUL through the XULElement interface, also implement Element.</p>
-          <footer><p>Information copied from <cite><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element">MDN's entry on the Element type</a></cite></p></footer>
-        </section>
-      </article>
+    <header>
+    <h1 id="heading">Transforming Regent Park into an Ethical Smart City by 2040</h1>
+    <p>A plan to transform Regent Park into an Ethical Smart City by 2040 by the Institute without Boundaries at George Brown College:</p>
+    <ul>
+    <div class="reading">Reading time: <span id="readingTime"></span></div>
+    <li><a href="#foreword">Foreword</a></li>
+    <li><a href="#resSumm">Research Summary</a></li>
+    <li><a href="#rp2040">Regent Park 2040</a></li>
+    </ul>
+    </nav>
+    </header>
+    <article>
+    <section id="foreword">
+    <h2>Foreword</h2>
+    <img src="img/regent-park-1.jpg" alt="Photo of Dan Bergeron's faces of Regent Park">
+    <p>The feeling of pride, sense of belonging and creativity have been trademarks of Regent Park for
+    decades. In the year 2040, post-revitalization, even though there is a cultural and social
+    divide,
+    this community that fears that they’ll never reconnect, has the potential to bounce back.
+    “Little
+    characteristics that I remembered are now blurs, and it’s kind of sad because those were the
+    pieces
+    we grew up with.” - Stacy Regent Park is a community that wants to stay connected to the people
+    who
+    have always been their neighbors - the ones they grew up with, the ones they lost touch with and
+    the
+    ones they’ll welcome to the place they call home. “Where are all these memories going? Whose
+    community is it now?” - Jael It is important to keep this in mind when thinking about the future
+    of
+    neighbourhoods and how human-centred design can leverage the strengths of a community to improve
+    the
+    lives of those who live there. With the challenge of transforming Regent Park into an Ethical
+    Smart
+    City by the year 2040, characteristics of the neighbourhood can be utilized in design solutions
+    to
+    recreate history and foster an increase in social capital for all. A treasured piece of
+    long-time
+    residents’ history is their beloved green boxes. To many, a green box is simply the metal
+    container
+    that houses hydro machinery, but to those who grew up in Regent Park pre-revitalization, the
+    green
+    boxes were a hang-out spot, a landmark they’d gather around to connect with friends. “All over
+    Regent, there was green boxes. They were everywhere and they were always the hangout spot.” -
+    Limees
+    Taking inspiration from the original community’s rituals, Regent Park can rescue their history
+    and
+    create new memories as well as share the products of their creativity. To recreate feelings of
+    the
+    past, with a modern twist, Regent Park will gain an outdoor public hub in the centre of the
+    neighbourhood, including a permanent installation shaped like the old green boxes, where members
+    of
+    the 2040 community can casually gather and create unbreakable bonds that once were the strength
+    of
+    Regent Park. Just as many other ancient monuments the green box will commemorate and preserve
+    the
+    memories of the elders, be a symbol of the spirit of the young ones and a tribute to the soul of
+    the
+    community. This design report will outline a human-centred design strategy to reimagine
+    Toronto’s
+    Regent Park as an Ethical Smart City by the year 2040. With a focus on ethical values and
+    significant research to reinforce design decisions, this project will be brought to light to
+    emphasize the recreation of the essence of historically significant spaces of Regent Park before
+    the
+    revitalization began.</p>
+    <h3>Design Question</h3>
+    <p>How might we create a place where Regent Park residents can gather and connect, regardless of
+    their
+    background?</p>
+    <h3>Audience of the Ethical Smart Solution</h3>
+    <p>People who live in Regent Park in 2040.</p>
+    <h3>Goals</h3>
+    <ul>
+    <li>To build social capital and sense of community.</li>
+    <li>To rescue the history of Regent Park and create new memories.</li>
+    <li>To exhibit and incentivize creativity in the community.</li>
+    <li>To include Ethical Values in a human-centred design for 2040.</li>
+    </ul>
+    </section>
+    <section id="resSumm">
+    <h2>Research Summary</h2>
+    <img src="img/regent-park-2.jpg" alt="Image of Regent Park">
+    <h3>History and Trends of Regent Park</h3>
+    <ul>
+    <li>60% of the original Regent Park population pre-revitalization was born outside of Canada
+    </li>
+    <li>Pre-revitalization, residents gathered no matter their background or differences</li>
+    <li>There are 70 different languages spoken in Regent Park</li>
+    <li>70% of residents are living with low income</li>
+    <li>The current segregated housing complexes separating those in social housing from those in
+    condos does not improve lives but instead increases negative social outcomes </li>
+    <li>People who live in social housing feel more attached to their history, meaning they are the
+    most affected by the revitalization</li>
+    <li>Forced relocation can be traumatic and detrimental to people’s health, as they are torn from
+    their support system</li>
+    <li>Youth who lived in Regent Park pre-revitalization feel “disembodied” from Regent Park as
+    they witness their history being demolished</li>
+    <li>Those returning to Regent Park as the revitalization is ongoing feel increasingly socially
+    isolated as they have lost touch with friends and the physical space</li>
+    <li>There have been efforts to bring the community together, through the Community Animator
+    Program and Maple Leaf Sports & Entertainment partnerships, but the effects of those have
+    not rippled through the neighbourhood</li>
+    </ul>
+    <h3>Future Trends of Public Spaces in Toronto</h3>
+    <li>Multi-purpose spaces</li>
+    <li>Increase in sensor infrastructure to collect data</li>
+    <li>Increase in social networks within public spaces</li>
+    <li>Challenges include data governance and intellectual property in spaces</li>
+    <h3>Significant General Trends of the Future</h3>
+    <ul>
+    <li>Increased digital connectivity paired with an increase in isolation and loneliness</li>
+    <li>The current statistic of 34.6% of Canadians who do not feel a sense of belonging to their
+    local
+    community is at risk of increasing</li>
+    <li>Inclusive design will become mainstream</li>
+    </ul>
+    <h3>Challenges</h3>
+    <li>Reintegration of the community</li>
+    <li>Preservation of history</li>
+    <li>Social stratification</li>
+    <li>Isolation</li>
+    <h3>Major Insights</h3>
+    <ol>
+    <li>Humans need more than just being placed in the same geographic location to bond.</li>
+    <li>Art brings people together to foster authentic interactions, shared experiences and,
+    ultimately,
+    social capital/ inclusivity.</li>
+    <li>The strengths of a community, especially creative ones, can be a great starting point for
+    smart
+    solutions.</li>
+    <li>Changes may not always seem beneficial at first, but they do bring new opportunities.</li>
+    </ol>
+    <section id="rp2040">
+    <h2>Regent Park 2040</h2>
+    <img src="img/regent-park-3.jpg" alt="Image of Regent Park">
+    <p>Residents create art, music and stories to be curated by the Arts and Cultural Centre, then
+    showcased
+    on and inside The Box.</p>
+    <p>The Box is a cube-shaped, permanent installation in a central location of Regent Park - the
+    Community
+    Park. An ode to the historically significant green boxes, The Box will be a community hub - a
+    place
+    to connect people to one another through storytelling of new and old history, a showcase of
+    visual
+    art and music as well as a place to interact organically with neighbours. In partnership with
+    the
+    neighbourhood’s Arts and Cultural Centre, Daniel’s Spectrum, art and stories by residents will
+    be
+    created and curated to be exhibited on and inside The Box and an archive of all art will be
+    stored
+    at the Centre. </p>
+    <p>The Box’s sense of place and social interchange, much like the feeling of gathering around a
+    campfire, is enhanced by inclusive and accessible design that incorporates a mixture of urban
+    seating that promotes conversation and connection in a public space open to all.</p>
+    <p>Technology is used to streamline processes of The Box. Display screens on the inside and outside
+    of
+    the structure are ultrathin, Smart Tiles, which have temperature sensors, keep the area warm in
+    the
+    colder months, voice control to interact with The Box inside, free wifi connection at 10G speeds
+    and
+    renewable, solar energy to power itself sustainably.</p>
+    <p>Every first Sunday of each month, the showcase will change to allow for inclusion of new artists’
+    work and bring residents or other Torontonians to the area to share in building social capital
+    and
+    history.</p>
+    <p>The Box will serve as a monument for the past as well as the future of Regent Park’s ability to
+    come
+    together to own a shared sense of belonging.</p>
+    </section>
+    </article>
     </main>
-
+    <footer>
+    2020 George Brown College     
+    </footer>
     <script src="js/index.js"></script>
-  </body>
+    </body>
 </html>
