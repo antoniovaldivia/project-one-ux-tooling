@@ -1,54 +1,101 @@
+
 body {
-  font: 1em helvetica, arial, sans-serif;
-  background-color: #fff;
-  color: #222;
+    background-color: lightcyan;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding: 2em;
 }
+
 
 h1 {
-  background-color: tomato;
-  top: 0;
-  left: 0;
-  transition: all 0.5s;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+    background-color: tomato;
+    transition: all 0.5s;
+    margin-bottom: 0.5em;
 }
 
-.fixed {
-  position: fixed;
-  font-size: 1em;
-  margin: 0;
-  width: 100%;
+h2 {
+    margin-top: 1em;
+    font-weight: 700;
+    font-size: 2em;    
 }
 
+img {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-radius: 0.5%;
+    padding: 0.5em;
+    border: lightseagreen;
+    border-style: solid;
+    margin-top: 1em;
+    margin-bottom: 1em;
 
-.heading {
-  opacity: 0;
-  transition: opacity 1s;
-}
-.show {
-  opacity: 1;
 }
 
-.story {
-  padding: 0 1em;
-  margin: 1em 0;
+.progressText {
+    font-size: 0.5em;
+    font-weight: 800;
+    text-align: right;
+    display: none;
+}
+
+.progressBg {
+    background-color: #8FD8D4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3em;
+
 }
 
 .progress {
-  /* background-color: limegreen; */
-  background: linear-gradient(90deg, rgba(140,185,25,1) 0%, rgba(0,212,255,1) 100%);
-  background-size: 300vw;
-  background-position: -200vw;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 1em;
-  overflow: hidden;
-  opacity: 0;
+    background-color: lightseagreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0.3em;
+    overflow: hidden;
+    color: white;
+    font-weight: 900;
+
 }
 
-.dot {
-  height: 3px;
-  width: 3px;
-  position: fixed;
-  background-color: red;
+.titleBar {
+    background-color: tomato;
+    position: fixed;
+    top: 0.3em;
+    left: 0;
+    width: 100%;
+    height: 1.2em;
+    overflow: hidden;
+    color: white;
+    font-weight: 900;
+    display: none;
+}
+
+.hide  {
+    display: none;
+}
+
+.show  {
+    display: block;
+}
+.reading {
+    font-size: 0.8em;
+    font-weight: 800;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 1.5em;
 }
